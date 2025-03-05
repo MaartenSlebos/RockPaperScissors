@@ -51,6 +51,12 @@ function playRound(computerChoice, humanChoice) {
         resultsDiv.innerHTML += '<br>It\'s a draw!';
         resultsDiv.innerHTML += '<br> Human score: ' + humanScore +" | Computer score: " + computerScore;
     }
+
+    if (humanScore >= 5) {
+        resultsDiv.innerHTML = 'You win! Your score was ' + humanScore + ', and the computer score was ' + computerScore +'.';
+    } else if (computerScore >= 5) {
+        resultsDiv.innerHTML = 'You lose! Your score was ' + humanScore + ', and the computer score was ' + computerScore +'.';
+    }
 }
 
 const rockButton = document.querySelector('#rock'); 

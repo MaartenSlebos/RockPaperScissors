@@ -47,32 +47,8 @@ function playGame() {
         } else {
             console.log("It's a draw!")
         }
-    }
-
-    console.log('Round 1:')
-    playRound(getComputerChoice(),getHumanChoice())
-    console.log('Humanscore: ' + humanScore + ' Computerscore: ' + computerScore)
-    console.log('Round 2:')
-    playRound(getComputerChoice(),getHumanChoice())
-    console.log('Humanscore: ' + humanScore + ' Computerscore: ' + computerScore)
-    console.log('Round 3:')
-    playRound(getComputerChoice(),getHumanChoice())
-    console.log('Humanscore: ' + humanScore + ' Computerscore: ' + computerScore)
-    console.log('Round 4:')
-    playRound(getComputerChoice(),getHumanChoice())
-    console.log('Humanscore: ' + humanScore + ' Computerscore: ' + computerScore)
-    console.log('Round 5:')
-    playRound(getComputerChoice(),getHumanChoice())
-    console.log('Humanscore: ' + humanScore + ' Computerscore: ' + computerScore)
-
-    if (humanScore > computerScore) {
-        console.log('Your score is higher than the computer. You win!')
-    } else if ( humanScore < computerScore ) {
-        console.log('Your score is lower than the computer. You lose!')
-    } else {
-        console.log('Its a draw')
-    }
+}
 
 }
 
-playGame()
+playGame(); 

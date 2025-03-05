@@ -52,3 +52,23 @@ function playGame() {
 }
 
 playGame(); 
+
+const rockButton = document.querySelector('#rock'); 
+const paperButton = document.querySelector('#paper');
+const scissorsButton = document.querySelector('#scissors')
+
+rockButton.addEventListener('click', function() {
+    playerSelection = 'rock'
+    console.log(playerSelection)
+})
+
+paperButton.addEventListener('click', function() {
+    playerSelection = 'paper'
+    console.log(playerSelection)
+})
+
+scissorsButton.addEventListener('click', function() {
+    playerSelection = 'scissors'
+    console.log(playerSelection)
+})
+
